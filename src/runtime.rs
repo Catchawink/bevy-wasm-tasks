@@ -3,6 +3,9 @@ use bevy_ecs::system::Resource;
 #[cfg(feature = "tokio")]
 use std::{future::Future, sync::Arc};
 
+#[cfg(feature = "wasm")]
+use futures_util::Future;
+
 #[cfg(feature = "tokio")]
 #[derive(Resource)]
 pub struct Runtime(pub Arc<tokio::runtime::Runtime>);
