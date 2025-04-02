@@ -46,6 +46,6 @@ impl Runtime {
 
     #[cfg(feature = "wasm")]
     pub fn block_on<F: Future>(&self, future: F) -> F::Output {
-        bevy::tasks::block_on(future)
+        bevy_tasks::block_on(future)
     }
 }
