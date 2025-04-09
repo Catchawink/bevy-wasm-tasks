@@ -16,8 +16,8 @@ tokio = ["tokio/full"]
 wasm = ["tokio/rt"]
 
 [dependencies]
-bevy_app = { git = "https://github.com/MrGVSV/bevy.git", branch = "mrgvsv/reflect/serializable-dynamic-types" }
-bevy_ecs = { git = "https://github.com/MrGVSV/bevy.git", branch = "mrgvsv/reflect/serializable-dynamic-types" }
+bevy_app = { git = "https://github.com/empathic-ai/bevy.git", branch = "reflect/serializable-dynamic-types" }
+bevy_ecs = { git = "https://github.com/empathic-ai/bevy.git", branch = "reflect/serializable-dynamic-types" }
 dashmap = "5.5.3"
 flume = "0.11.1"
 futures-util = { version = "0.3", features = ["channel"] }
