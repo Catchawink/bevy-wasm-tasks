@@ -38,17 +38,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0942ffc6dcaadf03badf6e6a2d0228460359d5e34b57ccdc720b7382dfbd5ec5"
 
 [[package]]
-name = "assert_type_match"
-version = "0.1.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f548ad2c4031f2902e3edc1f29c29e835829437de49562d8eb5dc5584d3a1043"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn",
-]
-
-[[package]]
 name = "async-executor"
 version = "1.11.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -108,7 +97,6 @@ source = "git+https://github.com/empathic-ai/bevy.git?branch=reflect%2Fserializa
 dependencies = [
  "bevy_derive",
  "bevy_ecs",
- "bevy_reflect",
  "bevy_tasks",
  "bevy_utils",
  "console_error_panic_hook",
@@ -136,7 +124,6 @@ source = "git+https://github.com/empathic-ai/bevy.git?branch=reflect%2Fserializa
 dependencies = [
  "bevy_ecs_macros",
  "bevy_ptr",
- "bevy_reflect",
  "bevy_tasks",
  "bevy_utils",
  "bitflags 2.6.0",
@@ -175,35 +162,6 @@ dependencies = [
 name = "bevy_ptr"
 version = "0.15.3"
 source = "git+https://github.com/empathic-ai/bevy.git?branch=reflect%2Fserializable-dynamic-types#aa34005427bccb5ce0ad67b87211516a94898295"
-
-[[package]]
-name = "bevy_reflect"
-version = "0.15.3"
-source = "git+https://github.com/empathic-ai/bevy.git?branch=reflect%2Fserializable-dynamic-types#aa34005427bccb5ce0ad67b87211516a94898295"
-dependencies = [
- "assert_type_match",
- "bevy_ptr",
- "bevy_reflect_derive",
- "bevy_utils",
- "derive_more",
- "disqualified",
- "downcast-rs",
- "erased-serde",
- "serde",
- "smallvec",
-]
-
-[[package]]
-name = "bevy_reflect_derive"
-version = "0.15.3"
-source = "git+https://github.com/empathic-ai/bevy.git?branch=reflect%2Fserializable-dynamic-types#aa34005427bccb5ce0ad67b87211516a94898295"
-dependencies = [
- "bevy_macro_utils",
- "proc-macro2",
- "quote",
- "syn",
- "uuid",
-]
 
 [[package]]
 name = "bevy_tasks"
@@ -395,15 +353,6 @@ name = "equivalent"
 version = "1.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5443807d6dff69373d433ab9ef5378ad8df50ca6298caf15de6e52e24aaf54d5"
-
-[[package]]
-name = "erased-serde"
-version = "0.4.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "388979d208a049ffdfb22fa33b9c81942215b940910bccfe258caeb25d125cb3"
-dependencies = [
- "serde",
-]
 
 [[package]]
 name = "fastrand"
@@ -942,15 +891,6 @@ name = "unicode-xid"
 version = "0.2.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ebc1c04c71510c7f702b52b7c350734c9ff1295c464a03335b00bb84fc54f853"
-
-[[package]]
-name = "uuid"
-version = "1.12.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b3758f5e68192bb96cc8f9b7e2c2cfdabb435499a28499a42f8f984092adad4b"
-dependencies = [
- "getrandom",
-]
 
 [[package]]
 name = "version_check"

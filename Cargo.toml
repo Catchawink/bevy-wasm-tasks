@@ -2,7 +2,7 @@
 name = "bevy-wasm-tasks"
 # Major and minor version here should match bevy's. Patch version can vary.
 version = "0.13.0"
-edition = "2021"
+edition = "2024"
 license = "CC0-1.0"
 description = "Simple integration of WASM tasks into a Bevy app for background processing."
 homepage = "https://crates.io/crates/bevy-wasm-tasks"
@@ -16,8 +16,8 @@ tokio = ["tokio/full"]
 wasm = ["tokio/rt"]
 
 [dependencies]
-bevy_app = { git = "https://github.com/empathic-ai/bevy.git", branch = "reflect/serializable-dynamic-types" }
-bevy_ecs = { git = "https://github.com/empathic-ai/bevy.git", branch = "reflect/serializable-dynamic-types" }
+bevy_app = { git = "https://github.com/empathic-ai/bevy.git", branch = "reflect/serializable-dynamic-types", default-features = false }
+bevy_ecs = { git = "https://github.com/empathic-ai/bevy.git", branch = "reflect/serializable-dynamic-types", default-features = false }
 dashmap = "5.5.3"
 flume = "0.11.1"
 futures-util = { version = "0.3", features = ["channel"] }
